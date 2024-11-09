@@ -1,5 +1,8 @@
 <h1 align="center"> Reversal of Thought: Enhancing Large Language Models with Preference-Guided Reverse Reasoning Warm-up </h1>
 
+RoT improves reasoning accuracy and efficiency while minimizing computational costs, leveraging **Preference-Guided Reverse Reasoning** and a **Cognitive Preference Manager** to optimally explore LLM reasoning with cognitive preferences.
+
+
 ## Model Architecture
 <img src="./asset/Reversal_Of_Thought.png">
 
@@ -9,7 +12,7 @@
 from utils.llm_utils import *
 from utils.prompt import *
 pipeline=Pipeline(model_id=model_id, base_url=base_url, api_key=api_key, prob=True)
-demos = "Input:... Output:..."
+demos = "Input:... Output:..." #Suggest 2-shot Demos
 llm_taste=rot_pipeline( pipeline, reversal_of_thought, demos=demos, warmup=5)
 ```
 ## What might reversal_demo.py be used for?
