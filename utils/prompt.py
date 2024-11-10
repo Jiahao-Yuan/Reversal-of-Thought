@@ -27,6 +27,6 @@ cific task, including the task definition, pseudocode, logical pseudocode, case 
  Input: [Demonstration] Output: [Output]
 '''
 Pair_pre='''
-Please choose yourmorepreferredinstruction: A or B ?
+Please choose your more preferred instruction: A or B ?
 Input:
 '''
